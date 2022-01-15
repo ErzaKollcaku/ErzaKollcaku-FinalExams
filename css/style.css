@@ -1,0 +1,320 @@
+:root{
+    --box-shadow : 0 5px 20px rgb(2,2,0,1);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    
+}
+html{
+    scroll-padding-top: 70px;
+}
+
+header{
+    box-shadow: var(--box-shadow);
+    background-color: snow;
+}
+
+header .logo{
+    font-size:22px;
+    color: red;
+    font-weight: bolder;
+}
+
+
+header .nav a{
+    margin-left:20px;
+    border-radius: 50px;
+    color: black;
+    padding: 5px 15px;
+    
+}
+header .nav a.active,
+header .nav a:hover{
+    background-color: red;
+ 
+    color: snow;
+}
+
+
+.menu-bar{
+    color: black;
+    font-size: 25px;
+    transform: .2s linear;
+
+}
+section{
+    padding: 40px 0;
+    background-color: snow;
+}
+
+section img{
+    box-shadow:var(--box-shadow) ;
+    border-radius: 20px;
+}
+
+.home .content span{
+ color:red;
+ font-size: 50px;
+font-family: monospace;
+font-weight: bold;
+
+}
+
+.home .content h3{
+    color:black;
+    font-size: 50px;
+    font-weight: bolder;
+ }
+
+ .link-btn{
+     display: inline-block;
+     background-color: red;
+     color: snow;
+     padding: 5px 25px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+ }
+
+
+.link-btn  :hover{
+    background-color: royalblue;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 5px;
+    color: black;
+    font-size: 30px;
+}
+
+.heading span{
+    color: red;
+}
+
+ .prevent.box{
+     flex:  1 1 300px;
+     background-color: snow;
+     border-radius: 5px;
+     text-align: center;
+ }   
+ .prevent.box img{
+     margin-bottom: 10px;
+     height: 70px;
+ }
+
+ .prevent.box h3{
+     font-size: 5px;
+     text-align: center;
+ }
+
+ .experts .box{
+    width:260px;
+    background:#fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin:5px;
+    padding:15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.experts .box img{
+    background:#f8f8fe;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.experts .box h3{
+    font-size: 22px;
+    margin:2px 0;
+    color:black;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.experts .box span{
+    font-size: 15px;
+    color:red;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.experts .box .share{
+    position: absolute;
+    top:5px; right: -50px;
+    transition: .2s;
+}
+
+.experts .box:hover .share{
+    right:15px;
+}
+
+.experts .box .share a{
+    border-radius: 5px;
+    background:red;
+    color:#fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+.experts .box .share a:hover{
+    background:black;
+}
+
+.contact form{
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact form .box,
+.contact form textarea{
+    background:#f8f8fe;
+    border-radius: 5px;
+    font-size: 17px;
+    padding:10px;
+    margin:7px 0;
+    width: 100%;
+    text-transform: none;
+    color:black
+}
+
+.contact form textarea{
+    resize: none;
+    height: 200px;
+}
+
+footer{
+    background-color: red;
+}
+
+.contact .map{
+    border-radius: 5px;
+    height: 100%;
+    width:100%;
+}
+
+footer .box{
+    flex:1 1 250px;
+  
+}
+
+.footer .box h3{
+    font-size: 20px;
+    color:red;
+}
+
+.footer .box a{
+    display: block;
+    font-size: 14px;
+    color:#777;
+    padding:5px 0;
+}
+
+.footer .box a:hover{
+    color:var(--main-color);
+}
+
+
+.footer .credit span{
+    color:red
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    .home .content h3{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .nav{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+ header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+header .nav a{
+    display: block;
+    width: 100%;
+    margin:10px;
+}
+.fa-times{
+    transform: rotate(180deg);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+/* media queries  */
+

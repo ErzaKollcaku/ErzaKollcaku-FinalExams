@@ -12,5 +12,13 @@ window.onscroll = () =>{
     nav.classList.remove('active');
 
 }
-
+clickCounter(); //Tek pjesa e dergimit te mesazhit
+    
+function clickCounter() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+}
 
